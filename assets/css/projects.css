@@ -1,0 +1,94 @@
+.projects {
+  background-color: #fff;
+}
+
+.projects__content {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 87.5rem;
+}
+
+.project__title {
+  padding-top: 5.5rem;
+  font-size: 2rem;
+}
+
+.project__paragraph {
+  margin: 2rem 0;
+}
+
+.projects__cards {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  margin: 0 auto;
+  max-width: 87.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  box-shadow: 5px 5px 10px #14140e;
+  width: 18rem;
+  height: 20rem;
+  transition: transform 1s;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card__bg--ecommerce {
+  background: url("../img/e-commerce.jpg") no-repeat;
+  background-size: cover;
+}
+
+.card__bg--socialMedia {
+  background: url("../img/socialMedia.jpg");
+  background-size: 18rem 20rem;
+}
+
+.card__bg--chat {
+  background: url("../img/chat.jpg") no-repeat;
+  background-size: 18rem 20rem;
+}
+
+.card__content {
+  background-color: rgba(252, 217, 104, 0.7);
+  backdrop-filter: blur(1px);
+  padding: 1rem;
+  width: 18rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card__title {
+  margin-top: 8rem;
+  text-align: center;
+  font-family: "Water Brush", cursive;
+  font-size: 2rem;
+}
+
+.card__button {
+  width: 100%;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.button--abrir {
+  background-color: black;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  font-size: 0.8rem;
+  color: #fcda68;
+  text-decoration: none;
+}
+
+.button--github {
+  width: 1.5rem;
+}

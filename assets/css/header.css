@@ -1,0 +1,132 @@
+.header {
+  background-color: black;
+}
+
+.header__content {
+  margin: 0 auto;
+  padding: 0 2rem;
+  max-width: 87.5rem;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.header__text {
+  padding: 0;
+}
+
+.header__paragraph {
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.699);
+}
+
+/* function */
+
+.color--orange {
+  color: rgb(255, 238, 0);
+}
+
+.color--blue {
+  color: rgb(252, 218, 104);
+}
+
+.color--red {
+  color: rgb(207, 175, 32);
+}
+
+.header__title {
+  margin-top: 3rem;
+  font-size: 5rem;
+  color: rgb(255, 255, 255);
+}
+
+.color--title {
+  color: #fcda68; /* rgb(240, 118, 48); */
+}
+
+.animation::before {
+  content: "";
+  animation: profession 5s linear infinite;
+}
+
+@keyframes profession {
+  0% {
+    content: "";
+  }
+  20% {
+    content: "Desarrollador";
+  }
+  40% {
+    content: "Desarrollador web";
+  }
+  60% {
+    content: "Desarrollador web full";
+  }
+  80% {
+    content: "Desarrollador web full stack.";
+  }
+  100% {
+    content: "";
+  }
+}
+
+.button__contact {
+  margin-top: 4rem;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  background-color: #fcda68;
+  padding: 0.7rem;
+  border: 0.1rem solid rgb(0, 0, 0);
+  cursor: pointer;
+  transition: background-color 1s;
+}
+
+.button:hover {
+  background-color: rgb(0, 0, 0);
+  border: 0.1rem solid #fcda68;
+  color: #fcda68;
+}
+
+.button__contacts {
+  padding: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.contact__img {
+  width: 1.2rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.contact__img:hover {
+  transform: scale(1.2);
+}
+
+.hidden {
+  display: none;
+}
+
+/* @Queris */
+@media (max-width: 1200px) {
+  .header__title {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__title {
+    font-size: 3.3rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header__title {
+    height: 6rem;
+    font-size: 2.3rem;
+  }
+}

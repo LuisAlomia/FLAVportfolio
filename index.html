@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FLAVportfolio</title>
+
+    <!-- Fuentes -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/estilos.css" />
+    <link rel="stylesheet" href="./assets/css/nav.css" />
+    <link rel="stylesheet" href="./assets/css/header.css" />
+    <link rel="stylesheet" href="./assets/css/about.css" />
+    <link rel="stylesheet" href="./assets/css/projects.css" />
+    <link rel="stylesheet" href="./assets/css/footer.css" />
+  </head>
+  <body>
+    <!-- Barra de navegacion -->
+    <div class="nav">
+      <nav class="nav__content">
+        <div class="logo">FLAV<span class="logo__mas">portfolio</span></div>
+        <div class="nav__rigth">
+          <ul class="nav__links">
+            <li id="btnInicioUne">
+              <a id="inicioActive" class="nav__link active" href="#">Inicio</a>
+            </li>
+            <li id="btnProjectUne">
+              <a id="projectActive" class="nav__link" href="#project"
+                >Proyectos</a
+              >
+            </li>
+            <li id="btnAboutUne">
+              <a id="aboutActive" class="nav__link" href="#about">Sobre mi</a>
+            </li>
+          </ul>
+          <!-- manu hamburguesa -->
+          <img
+            id="btnMenu"
+            class="nav__menu"
+            src="./assets/img/menu.svg"
+            alt="menu"
+          />
+          <ul id="menuHidden" class="menu__hamburguesa hidden">
+            <li id="btnInicio" class="menu">
+              <a id="inicioActiveHamb" class="nav__link active" href="#"
+                >Inicio</a
+              >
+            </li>
+            <li id="btnProject" class="menu">
+              <a id="projectActiveHamb" class="nav__link" href="#project"
+                >Proyectos</a
+              >
+            </li>
+            <li id="btnAbout" class="menu">
+              <a id="aboutActiveHamb" class="nav__link" href="#about"
+                >Sobre mi</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <!-- Header -->
+    <div class="header">
+      <header class="header__content">
+        <div class="header__text">
+          <p class="header__paragraph">
+            <span class="color--blue">let</span>
+            <span class="color--red">profession</span> =
+            <span class="color--orange">"desarrollador web full stack"</span>;
+            <br />
+            <br />
+            <span class="color--blue">function</span> career<span
+              class="color--blue"
+              >(</span
+            ><span class="color--red">profession</span
+            ><span class="color--blue">) {</span>
+            <br />
+            &nbsp &nbsp <span class="color--blue">console.log(</span
+            ><span class="color--orange">`Hola, soy Luis</span>
+            <span class="color--blue">${</span
+            ><span class="color--red">profession</span
+            ><span class="color--blue">}</span>.<span class="color--orange"
+              >`</span
+            ><span class="color--blue">)</span>; <br />
+            <span class="color--blue">}</span> <br />
+            career<span class="color--blue">(</span
+            ><span class="color--red">profession</span
+            ><span class="color--blue">)</span>;
+          </p>
+          <h1 class="header__title">
+            Hola, soy Luis <br />
+            |<span class="color--title animation"></span>
+          </h1>
+        </div>
+        <!-- Button -->
+        <div class="button__contact">
+          <button id="btnContactHeader" class="button">
+            <b>Contacta con migo</b>
+          </button>
+          <div id="hiddenBtnHeader" class="button__contacts hidden">
+            <img
+              class="contact__img"
+              src="./assets/img/linkedin1.svg"
+              alt="linkedin"
+              title="linkedin"
+            />
+            <img
+              class="contact__img"
+              src="./assets/img/github1.svg"
+              alt="github"
+              title="github"
+            />
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <main>
+      <!-- Main Projects -->
+      <section id="project" class="projects">
+        <div class="projects__content">
+          <h2 class="project__title">Proyectos</h2>
+          <p class="project__paragraph">
+            Estos son algunos de los proyectos en los que he trabajado de manera
+            personal, haciendo uso del <b>stack de tecnologías MERN.</b>
+          </p>
+        </div>
+        <div class="projects__cards">
+          <div class="card card__bg--ecommerce">
+            <div class="card__content">
+              <h3 class="card__title">E-commerce</h3>
+              <div class="card__button">
+                <a class="button--abrir" href="#"><b>Abrir</b></a
+                ><a href="#"
+                  ><img
+                    class="button--github"
+                    src="./assets/img/github.svg"
+                    alt="github"
+                    title="github"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="card card__bg--socialMedia">
+            <div class="card__content">
+              <h3 class="card__title">social Memes</h3>
+              <div class="card__button">
+                <a class="button--abrir" href="#"><b>Abrir</b></a
+                ><a href="#"
+                  ><img
+                    class="button--github"
+                    src="./assets/img/github.svg"
+                    alt="github"
+                    title="github"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div class="card card__bg--chat">
+            <div class="card__content">
+              <h3 class="card__title">Chat</h3>
+              <div class="card__button">
+                <a class="button--abrir" href="#"><b>Abrir</b></a
+                ><a href="#"
+                  ><img
+                    class="button--github"
+                    src="./assets/img/github.svg"
+                    alt="github"
+                    title="github"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Main about -->
+      <section id="about" class="about">
+        <div class="about__content">
+          <!-- Tecnologies -->
+          <div class="tecnologies__content">
+            <h3 id="about" class="tecnologies__title">Tecnologías</h3>
+            <div class="about__technologies">
+              <div class="technologies techHTML">
+                <img src="./assets/img/html.svg" alt="" />
+                <p>HTML</p>
+              </div>
+              <div class="technologies techGIT">
+                <img src="./assets/img/git.svg" alt="" />
+                <p>Git</p>
+              </div>
+              <div class="technologies techCSS">
+                <img src="./assets/img/css.svg" alt="" />
+                <p>CSS</p>
+              </div>
+              <div class="technologies techNODE">
+                <img src="./assets/img/nodejs.svg" alt="" />
+                <p>Node JS</p>
+              </div>
+              <div class="technologies techJS">
+                <img src="./assets/img/javascript.svg" alt="" />
+                <p>javascript</p>
+              </div>
+              <div class="technologies techREACT">
+                <img src="./assets/img/react.svg" alt="" />
+                <p>React JS</p>
+              </div>
+              <div class="technologies techSQL">
+                <img src="./assets/img/sql.svg" alt="" />
+                <p>SQL</p>
+              </div>
+            </div>
+          </div>
+          <!-- About -->
+          <div class="about__text">
+            <h2 class="about__title">Luis Fidel Alomia Valencia</h2>
+            <p class="about__paragraph">
+              Soy un desarrollador Web Fullstack, centrado en el uso de las
+              tecnologías MERN (MongoDB, Express, React y Node JS) y el
+              rendimiento de las aplicaciones web. <br /><br />Me encanta
+              programar, los retos y mantenerme en constante aprendizaje, soy un
+              gran entusiasta del diseño, el deporte y los videos juegos.
+              <br /><br />
+              Actualmente me mantengo en constante desarrollo de proyectos web
+              personales, en los que puedo aplicar nuevos conocimientos y
+              generar nuevos retos.
+            </p>
+            <!-- Button -->
+            <div class="button__contact">
+              <button
+                id="btnContactAbout"
+                class="button button__contact--project"
+              >
+                <b>Contacta con migo</b>
+              </button>
+              <div id="hiddenBtnAbout" class="button__contacts hidden">
+                <img
+                  class="contact__img"
+                  src="./assets/img/linkedin.svg"
+                  alt="linkedin"
+                  title="linkedin"
+                />
+                <img
+                  class="contact__img"
+                  src="./assets/img/github.svg"
+                  alt="github"
+                  title="github"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>

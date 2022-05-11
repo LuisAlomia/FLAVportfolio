@@ -1,0 +1,107 @@
+.about {
+  background-color: #fcda68;
+}
+
+.about__content {
+  background: #fcda68;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+  max-width: 87.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.tecnologies__content {
+  text-align: center;
+}
+
+.tecnologies__title {
+  margin-top: 3rem;
+  font-size: 2rem;
+  font-family: "Water Brush", cursive;
+}
+
+.about__technologies {
+  background-color: #f2c84b;
+  margin-top: 2rem;
+  box-shadow: -30px 40px 50px #ceaa40;
+  padding: 0 2rem;
+  width: 15rem;
+  height: 15rem;
+  position: relative;
+}
+
+.technologies img {
+  width: 1.8rem;
+}
+
+.technologies {
+  text-align: center;
+  font-size: 0.6rem;
+}
+
+.techHTML {
+  position: absolute;
+  top: 1rem;
+  left: 2.3rem;
+}
+
+.techGIT {
+  position: absolute;
+  top: 1.3rem;
+  right: 2rem;
+}
+
+.techCSS {
+  position: absolute;
+  top: 1.5rem;
+  right: calc(50% - 1rem);
+}
+
+.techNODE {
+  position: absolute;
+  bottom: calc(50% - 2rem);
+  right: calc(50% - 1.3rem);
+}
+
+.techJS {
+  position: absolute;
+  bottom: 5.5rem;
+}
+
+.techREACT {
+  position: absolute;
+  bottom: 1rem;
+  left: 2rem;
+}
+
+.techSQL {
+  position: absolute;
+  bottom: 5.3rem;
+  right: 2rem;
+}
+
+/* About */
+
+.about__text {
+  max-width: 35rem;
+}
+
+.about__title {
+  margin-top: 1rem;
+  font-size: 3rem;
+}
+
+.about__paragraph {
+  margin-top: 2rem;
+}
+
+.button__contact--project {
+  border: 0.1rem solid black;
+}
+
+.hidden {
+  display: none;
+}

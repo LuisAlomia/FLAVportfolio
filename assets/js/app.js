@@ -17,7 +17,7 @@ const hiddenBtnHeader = document.getElementById("hiddenBtnHeader");
 const btnContactAbout = document.getElementById("btnContactAbout");
 const hiddenBtnAbout = document.getElementById("hiddenBtnAbout");
 
-/* Navegacion */
+/* Navegacion boton activo */
 
 btnInicioUne.addEventListener("click", () => {
   inicioActive.classList.add("active");
@@ -38,8 +38,16 @@ btnAboutUne.addEventListener("click", () => {
 });
 
 /* Menu hamburguesa */
-
+let buttomHamburguesa = true;
 btnMenu.addEventListener("click", () => {
+  if (buttomHamburguesa) {
+    btnMenu.src = "./assets/img/close.svg";
+    buttomHamburguesa = false;
+  } else {
+    btnMenu.src = "./assets/img/menu.svg";
+    buttomHamburguesa = true;
+  }
+
   menuHidden.classList.toggle("hidden");
 });
 
@@ -47,6 +55,15 @@ btnInicio.addEventListener("click", () => {
   inicioActiveHamb.classList.add("active");
   projectActiveHamb.classList.remove("active");
   aboutActiveHamb.classList.remove("active");
+
+  if (buttomHamburguesa) {
+    btnMenu.src = "./assets/img/close.svg";
+    buttomHamburguesa = false;
+  } else {
+    btnMenu.src = "./assets/img/menu.svg";
+    buttomHamburguesa = true;
+  }
+
   menuHidden.classList.toggle("hidden");
 });
 
@@ -54,6 +71,15 @@ btnProject.addEventListener("click", () => {
   projectActiveHamb.classList.add("active");
   inicioActiveHamb.classList.remove("active");
   aboutActiveHamb.classList.remove("active");
+
+  if (buttomHamburguesa) {
+    btnMenu.src = "./assets/img/close.svg";
+    buttomHamburguesa = false;
+  } else {
+    btnMenu.src = "./assets/img/menu.svg";
+    buttomHamburguesa = true;
+  }
+
   menuHidden.classList.toggle("hidden");
 });
 
@@ -61,6 +87,15 @@ btnAbout.addEventListener("click", () => {
   aboutActiveHamb.classList.add("active");
   projectActiveHamb.classList.remove("active");
   inicioActiveHamb.classList.remove("active");
+
+  if (buttomHamburguesa) {
+    btnMenu.src = "./assets/img/close.svg";
+    buttomHamburguesa = false;
+  } else {
+    btnMenu.src = "./assets/img/menu.svg";
+    buttomHamburguesa = true;
+  }
+
   menuHidden.classList.toggle("hidden");
 });
 

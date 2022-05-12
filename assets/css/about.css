@@ -26,11 +26,12 @@
 .about__technologies {
   background-color: #f2c84b;
   margin-top: 2rem;
-  box-shadow: -30px 40px 50px #ceaa40;
+  box-shadow: 30px 40px 50px #ceaa40;
   padding: 0 2rem;
   width: 15rem;
   height: 15rem;
   position: relative;
+  border-radius: 0.2rem;
 }
 
 .technologies img {
@@ -96,6 +97,7 @@
 
 .about__paragraph {
   margin-top: 2rem;
+  text-align: justify;
 }
 
 .button__contact--project {

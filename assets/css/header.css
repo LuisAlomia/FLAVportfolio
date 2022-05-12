@@ -44,6 +44,7 @@
 
 .color--title {
   color: #fcda68; /* rgb(240, 118, 48); */
+  font-family: "Water Brush", cursive;
 }
 
 .animation::before {
@@ -55,20 +56,18 @@
   0% {
     content: "";
   }
-  20% {
+  25% {
     content: "Desarrollador";
+    transform: translateX(100px);
   }
-  40% {
+  50% {
     content: "Desarrollador web";
   }
-  60% {
+  75% {
     content: "Desarrollador web full";
   }
-  80% {
-    content: "Desarrollador web full stack.";
-  }
   100% {
-    content: "";
+    content: "Desarrollador web full stack.";
   }
 }
 
@@ -82,6 +81,7 @@
   background-color: #fcda68;
   padding: 0.7rem;
   border: 0.1rem solid rgb(0, 0, 0);
+  border-radius: 0.2rem;
   cursor: pointer;
   transition: background-color 1s;
 }

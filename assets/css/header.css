@@ -6,7 +6,7 @@
   margin: 0 auto;
   padding: 0 2rem;
   max-width: 87.5rem;
-  height: 70vh;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -24,15 +24,15 @@
 
 /* function */
 
-.color--orange {
+.color--yellow {
   color: rgb(255, 238, 0);
 }
 
-.color--blue {
+.color--yellowlight {
   color: rgb(252, 218, 104);
 }
 
-.color--red {
+.color--yellowDark {
   color: rgb(207, 175, 32);
 }
 
@@ -47,27 +47,25 @@
   font-family: "Water Brush", cursive;
 }
 
-.animation::before {
-  content: "";
-  animation: profession 5s linear infinite;
+.animation {
+  position: relative;
 }
 
-@keyframes profession {
-  0% {
-    content: "";
+.animationline {
+  position: absolute;
+  right: 0;
+  width: 0;
+  background-color: black;
+
+  animation: line 5s infinite alternate steps(30);
+}
+
+@keyframes line {
+  from {
+    width: 103%;
   }
-  25% {
-    content: "Desarrollador";
-    transform: translateX(100px);
-  }
-  50% {
-    content: "Desarrollador web";
-  }
-  75% {
-    content: "Desarrollador web full";
-  }
-  100% {
-    content: "Desarrollador web full stack.";
+  to {
+    width: 0;
   }
 }
 
@@ -132,5 +130,33 @@
   .header__title {
     height: 6rem;
     font-size: 2.3rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .header__title {
+    font-size: 3rem;
+  }
+
+  .animation {
+    font-size: 2rem;
+  }
+
+  .animationline {
+    font-size: 2.6rem;
+  }
+}
+
+@media (max-width: 385px) {
+  .header__paragraph {
+    font-size: 0.8rem;
+  }
+
+  .header__title {
+    font-size: 2.5rem;
+  }
+
+  .animation {
+    font-size: 1.5rem;
   }
 }

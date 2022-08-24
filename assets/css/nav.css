@@ -50,6 +50,10 @@
   color: black;
 }
 
+.nav__link:hover {
+  border-bottom: 0.1rem solid #fcda68;
+}
+
 .active {
   color: #fcda68;
 }

@@ -18,11 +18,13 @@
     />
 
     <!-- CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/estilos.css" />
     <link rel="stylesheet" href="./assets/css/nav.css" />
     <link rel="stylesheet" href="./assets/css/header.css" />
     <link rel="stylesheet" href="./assets/css/about.css" />
     <link rel="stylesheet" href="./assets/css/projects.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
   </head>
   <body>
@@ -77,12 +79,12 @@
 
     <!-- Header -->
     <div class="header">
-      <header class="header__content">
+      <header class="header__content" data-aos="fade-up">
         <div class="header__text">
           <p class="header__paragraph">
             <span class="color--yellowlight">let</span>
             <span class="color--yellowDark">profession</span> =
-            <span class="color--yellow">"desarrollador web full stack"</span>;
+            <span class="color--yellow">"desarrollador web front-end"</span>;
             <br />
             <br />
             <span class="color--yellowlight">function</span> career<span
@@ -108,18 +110,21 @@
             Hola, soy Luis <br />
             I
             <span class="color--title animation"
-              >Desarrollador web full stack..
+              >Desarrollador web front-end..
               <span class="animationline">&nbsp</span></span
             >
           </h1>
         </div>
         <!-- Button -->
-        <div class="button__contact">
+        <div class="button__contact" data-aos="fade-right">
           <button id="btnContactHeader" class="button">
             <b>Contacta con migo</b>
           </button>
           <div id="hiddenBtnHeader" class="button__contacts hidden">
-            <a href="#" target="">
+            <a
+              href="https://www.linkedin.com/in/luis-fidela-alomia-valencia-87b24923b/"
+              target="_blank"
+            >
               <img
                 class="contact__img"
                 src="./assets/img/linkedin1.svg"
@@ -141,60 +146,141 @@
 
     <main>
       <!-- Main Projects -->
-      <section id="project" class="projects">
+      <section id="project" class="projects" data-aos="fade-up">
         <div class="projects__content">
           <h2 class="project__title">Proyectos</h2>
           <p class="project__paragraph">
             Estos son algunos de los proyectos en los que he trabajado de manera
-            personal, haciendo uso del <b>stack de tecnologías MERN.</b>
+            personal, haciendo uso del
+            <b
+              >stack de tecnologías MERN, (MogooDB, Express, React, Redux, Node
+              JS)</b
+            >
           </p>
         </div>
-        <div class="projects__cards">
-          <div class="card card__bg--ecommerce">
-            <div class="card__content">
-              <h3 class="card__title">E-commerce</h3>
-              <div class="card__button">
-                <a class="button--abrir" href="#" target=""><b>Abrir</b></a
-                ><a href="https://github.com/LuisAlomia" target="_blank"
-                  ><img
-                    class="button--github"
-                    src="./assets/img/github.svg"
-                    alt="github"
-                    title="github"
-                /></a>
+      </section>
+
+      <!-- Carrosel -->
+      <section class="content__carousel" data-aos="fade-left">
+        <div class="slider">
+          <div class="wrapper">
+            <div
+              style="background-image: url('./assets/img/theMovieInfo.PNG')"
+              class="item item1 active"
+            >
+              <div class="item__info">
+                <p class="item__name">
+                  <span>The movie info</span>
+                </p>
+                <p class="item__year">
+                  <span
+                    >Con esta aplicación se busca mostrar la información
+                    relevante de las últimas películas en tendencia a través del
+                    consumo de la API de (The Movie.db), para esto se hace uso
+                    de las siguientes tecnologías: Vite, React,
+                    React-router-dom, React context Api, css módulos y
+                    Axios.</span
+                  >
+                </p>
+                <div class="btn">
+                  <a
+                    class="button--abrir"
+                    href="https://flav-theinfomovies.netlify.app"
+                    target="-blank"
+                    ><b>Abrir</b></a
+                  ><a
+                    href="https://github.com/LuisAlomia/The-Info-Movies"
+                    target="_blank"
+                  >
+                    <img
+                      class="button--github"
+                      src="./assets/img/github.svg"
+                      alt="github"
+                      title="github"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="background-image: url('./assets/img/eCommerce.PNG')"
+              class="item item2"
+            >
+              <div class="item__info">
+                <p class="item__name"><span>e-Commerce</span></p>
+                <p class="item__year">
+                  <span>
+                    Este es un e-commerce en el que se promocionan la marca de
+                    zapatillas Nike, cuenta con inicio de sesión, creación de
+                    usuarios y carrito de compras. Para el desarrollo de esta
+                    aplicación se hace uso de las siguientes tecnologías: Vite,
+                    React, Redux, React-router-dom, React-hook-form, css
+                    módulos, Mongo DB, Express, JWT JSON Web Token, roles y
+                    Axios.
+                  </span>
+                </p>
+                <div class="btn">
+                  <a
+                    class="button--abrir"
+                    href="https://github.com/LuisAlomia/aComerce"
+                    target="-blank"
+                    ><b>Abrir</b></a
+                  ><a
+                    href="https://github.com/LuisAlomia/aComerce"
+                    target="_blank"
+                  >
+                    <img
+                      class="button--github"
+                      src="./assets/img/github.svg"
+                      alt="github"
+                      title="github"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div
+              style="background-image: url('./assets/img/rickAndMorty.PNG')"
+              class="item item3"
+            >
+              <div class="item__info">
+                <p class="item__name"><span>Rick and morty</span></p>
+                <p class="item__year">
+                  <span>
+                    En esta aplicación se exploran las 126 dimensiones de la
+                    serie animada Rick And Morty, permitiendo ver los personajes
+                    que pertenecen a cada una de la dimensión al igual que su
+                    estado dentro de ellas, para el desarrollo de esta
+                    aplicación se hace uso de las siguientes tecnologías: Vite,
+                    React, custom Hooks, css módulos y Fetch Api.</span
+                  >
+                </p>
+                <div class="btn">
+                  <a
+                    class="button--abrir"
+                    href="https://flav-rickandmorty-app.netlify.app"
+                    target="-blank"
+                    ><b>Abrir</b></a
+                  ><a
+                    href="https://github.com/LuisAlomia/RickAndMortyAPP"
+                    target="_blank"
+                  >
+                    <img
+                      class="button--github"
+                      src="./assets/img/github.svg"
+                      alt="github"
+                      title="github"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="card card__bg--socialMedia">
-            <div class="card__content">
-              <h3 class="card__title">social Memes</h3>
-              <div class="card__button">
-                <a class="button--abrir" href="#" target=""><b>Abrir</b></a
-                ><a href="https://github.com/LuisAlomia" target="_blank"
-                  ><img
-                    class="button--github"
-                    src="./assets/img/github.svg"
-                    alt="github"
-                    title="github"
-                /></a>
-              </div>
-            </div>
-          </div>
-          <div class="card card__bg--chat">
-            <div class="card__content">
-              <h3 class="card__title">Chat</h3>
-              <div class="card__button">
-                <a class="button--abrir" href="#" target=""><b>Abrir</b></a
-                ><a href="https://github.com/LuisAlomia" target="_blank"
-                  ><img
-                    class="button--github"
-                    src="./assets/img/github.svg"
-                    alt="github"
-                    title="github"
-                /></a>
-              </div>
-            </div>
-          </div>
+
+          <div class="arrow arrow-next"></div>
+          <div class="arrow arrow-prev"></div>
         </div>
       </section>
 
@@ -202,7 +288,7 @@
       <section id="about" class="about">
         <div class="about__content">
           <!-- Tecnologies -->
-          <div class="tecnologies__content">
+          <div class="tecnologies__content" data-aos="fade-right">
             <h3 id="about" class="tecnologies__title">Tecnologías</h3>
             <div class="about__technologies">
               <div class="technologies techHTML">
@@ -236,21 +322,21 @@
             </div>
           </div>
           <!-- About -->
-          <div class="about__text">
+          <div class="about__text" data-aos="fade-up">
             <h2 class="about__title">Luis Fidel Alomia Valencia</h2>
             <p class="about__paragraph">
-              Soy un desarrollador Web Fullstack, centrado en el uso de las
-              tecnologías MERN (MongoDB, Express, React y Node JS) y el
-              rendimiento de las aplicaciones web. <br /><br />Me encanta
-              programar, los retos y mantenerme en constante aprendizaje, soy un
-              gran entusiasta del diseño, el deporte y los videos juegos.
-              <br /><br />
+              Soy un desarrollador Web, centrado en el stack de tecnologías MERN
+              (MongoDB, Express, React y Node JS) y el rendimiento de las
+              aplicaciones web. <br /><br />Me encanta programar, los retos y
+              mantenerme en constante aprendizaje, soy un gran entusiasta del
+              diseño, el deporte y los videos juegos, me gusta la sencillez y el
+              minimalismo. <br /><br />
               Actualmente me mantengo en constante desarrollo de proyectos web
               personales, en los que puedo aplicar nuevos conocimientos y
               generar nuevos retos.
             </p>
             <!-- Button -->
-            <div class="button__contact">
+            <div class="button__contact" data-aos="fade-right">
               <button
                 id="btnContactAbout"
                 class="button button__contact--project"
@@ -258,7 +344,10 @@
                 <b>Contacta con migo</b>
               </button>
               <div id="hiddenBtnAbout" class="button__contacts hidden">
-                <a href="#" target="">
+                <a
+                  href="https://www.linkedin.com/in/luis-fidela-alomia-valencia-87b24923b/"
+                  target="_blank"
+                >
                   <img
                     class="contact__img"
                     src="./assets/img/linkedin.svg"
@@ -281,6 +370,17 @@
       </section>
     </main>
     <footer class="footer"></footer>
+
+    <!-- SCRIPTS -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: false,
+      });
+    </script>
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/carousel.js"></script>
   </body>
 </html>

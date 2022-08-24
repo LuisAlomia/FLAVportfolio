@@ -44,7 +44,7 @@
 
 .color--title {
   color: #fcda68; /* rgb(240, 118, 48); */
-  font-family: "Water Brush", cursive;
+  /* font-family: "Water Brush", cursive; */
 }
 
 .animation {
@@ -62,7 +62,7 @@
 
 @keyframes line {
   from {
-    width: 103%;
+    width: 100%;
   }
   to {
     width: 0;

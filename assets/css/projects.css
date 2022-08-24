@@ -36,37 +36,46 @@
   height: 20rem;
   transition: transform 1s;
   border-radius: 0.2rem;
+  position: relative;
+  overflow: hidden;
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.1);
-}
+} */
 
 .card__bg--ecommerce {
-  background: url("../img/e-commerce.jpg") no-repeat;
-  background-size: cover;
+  background: url("../img/eCommerce.PNG") no-repeat;
+  background-size: 18rem 20rem;
 }
 
 .card__bg--socialMedia {
-  background: url("../img/socialMedia.jpg");
+  background: url("../img/theMovieInfo.PNG");
   background-size: 18rem 20rem;
 }
 
 .card__bg--chat {
-  background: url("../img/chat.jpg") no-repeat;
+  background: url("../img/rickAndMorty.PNG") no-repeat;
   background-size: 18rem 20rem;
 }
 
 .card__content {
-  background-color: rgba(252, 217, 104, 0.7);
+  background-color: rgba(233, 231, 225, 0.7); /* rgba(252, 217, 104, 0.7) */
   backdrop-filter: blur(1px);
   padding: 1rem;
   width: 18rem;
-  height: 20rem;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   border-radius: 0.2rem;
+  position: absolute;
+  top: 0;
+  transition: 1.5s;
+}
+
+.card__content:hover {
+  top: -20rem;
 }
 
 .card__title {
@@ -85,6 +94,7 @@
 
 .button--abrir {
   background-color: black;
+  height: 2rem;
   padding: 0.5rem;
   margin-right: 1rem;
   font-size: 0.8rem;

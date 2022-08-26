@@ -93,10 +93,17 @@
 .button__contacts {
   padding: 0.5rem;
   margin-left: 0.5rem;
+  height: 3rem;
+  width: 6rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .button__contacts a {
   text-decoration: none;
+  display: inline-block;
 }
 
 .contact__img {
@@ -105,7 +112,31 @@
   cursor: pointer;
 }
 
+.contact__cv {
+  margin-bottom: 0.3rem;
+}
+
+.contact__cv b {
+  background-color: #fcda68;
+  color: black;
+  border-radius: 0.1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  padding: 0.2rem;
+  font-weight: 800;
+  font-size: 0.8rem;
+}
+
+.cv--yellow b {
+  background-color: black;
+  color: #fcda68;
+}
+
 .contact__img:hover {
+  transform: scale(1.2);
+}
+
+.contact__cv:hover {
   transform: scale(1.2);
 }
 
